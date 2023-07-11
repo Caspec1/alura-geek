@@ -19,44 +19,13 @@
     <a class="header__button" href="./login.html">Login</a>
     <button class="header__search"><img src="./img/search.png" alt="Search"></button>
   </header>
-  <section class="banner">
-    <div class="banner__container">
-      <h2 class="banner__title">Febrero promocional</h2>
-      <p class="banner__description">Productos seleccionados con 33% de descuento</p>
-      <button class="banner__button btn">Ver Consolas</button>
+  <main class="products-page">
+    <div class="products-page__header">
+      <h2 class="products-page__title">Todos los productos</h2>
+      <a href="./add-product.html" class="banner__button btn products-page__button">Agregar producto</a>
     </div>
-  </section>
-  <main>
-    <section class="category">
-      <div class="category__description">
-        <h3 class="category__tittle">Guitars</h3>
-        <a href="./products.html" class="category__link">
-          <p>Ver todo</p>
-          <img src="./img/arrow.svg" alt="Arrow next">
-        </a>
-      </div>
-      <div class="products" id="guitars"></div>
-    </section>
-    <section class="category">
-      <div class="category__description">
-        <h3 class="category__tittle">Consoles</h3>
-        <a href="./products.html" class="category__link">
-          <p>Ver todo</p>
-          <img src="./img/arrow.svg" alt="Arrow next">
-        </a>
-      </div>
-      <div class="products" id="consoles"></div>
-    </section>
-    <section class="category">
-      <div class="category__description">
-        <h3 class="category__tittle">Others</h3>
-        <a href="./products.html" class="category__link">
-          <p>Ver todo</p>
-          <img src="./img/arrow.svg" alt="Arrow next">
-        </a>
-      </div>
-      <div class="products" id="others"></div>
-    </section>
+    <div class="products-page__products" id="products-page">
+    </div>
   </main>
   <footer class="footer">
     <div class="footer__info">
@@ -87,6 +56,6 @@
     <p class="copyright__author">Desarrollado por Javier Miranda</p>
     <p class="copyright__year">&copy; <span id="year"></span></p>
   </div>
-  <script src="./controllers/app.js"></script>
+  <script src="./controllers/products.js"></script>
 </body>
 </html>
