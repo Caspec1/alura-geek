@@ -79,7 +79,7 @@ const renderProducts = (div, products) => {
 
     const link = document.createElement('a');
     link.classList.add('product__link');
-    link.href = `../product.html?id=${product.id}&category=${product.category}`;
+    link.href = `https://caspec1.github.io/alura-geek/product?id=${product.id}&category=${product.category}`;
     link.textContent = "Ver producto";
 
     prod.appendChild(image);

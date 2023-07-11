@@ -58,7 +58,7 @@ if (idParam) {
         },
         body: JSON.stringify(request),
       })
-      window.location.href = `../products.html`
+      window.location.href = `https://caspec1.github.io/alura-geek/products`
     })
   })
 } else {
@@ -93,6 +93,6 @@ if (idParam) {
       },
       body: JSON.stringify(body),
     })
-    window.location.href = `../products.html`
+    window.location.href = `https://caspec1.github.io/alura-geek/products`
   })
 }

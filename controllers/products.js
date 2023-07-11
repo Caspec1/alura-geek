@@ -74,7 +74,7 @@ const renderProducts = (div, products) => {
 
     const link = document.createElement('a');
     link.classList.add('product__link');
-    link.href = `../product.html?id=${product.id}&category=${product.category}`;
+    link.href = `https://caspec1.github.io/alura-geek/product?id=${product.id}&category=${product.category}`;
     link.textContent = "Ver producto";
 
     const actions = document.createElement('div');
@@ -82,10 +82,10 @@ const renderProducts = (div, products) => {
 
     const edit = document.createElement('a');
     edit.classList.add('product__edit');
-    edit.href = `../add-product.html?id=${product.id}&category=${product.category}`;
+    edit.href = `https://caspec1.github.io/alura-geek/add-product?id=${product.id}&category=${product.category}`;
 
     const editIcon = document.createElement('img');
-    editIcon.src = "../img/edit.svg";
+    editIcon.src = "/img/edit.svg";
     editIcon.alt = "Edit Icon";
     edit.appendChild(editIcon);
 
@@ -97,7 +97,7 @@ const renderProducts = (div, products) => {
     remove.onclick = () => removeProduct(product.id, product.category);
 
     const removeIcon = document.createElement('img');
-    removeIcon.src = "../img/remove.svg";
+    removeIcon.src = "/img/remove.svg";
     removeIcon.alt = "Remove Icon";
     remove.appendChild(removeIcon);
 
